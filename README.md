@@ -1,2 +1,2 @@
-# kurtsimmons.xyz
+# kurtsimmons.io
 My personal portfolio
