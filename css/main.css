@@ -1,0 +1,25 @@
+body{
+    background-color: black;
+}
+
+.my-cont{
+    background-color: lightpink;
+}
+
+.big_intro_text{
+    width: 950px;
+    font-size: 10vw;
+    text-transform: uppercase;
+    font-family: 'Anton', sans-serif;
+}
+
+.small_intro_text{
+    margin-top: 300px;
+    font-size: 4vw;
+    font-family: 'Anton', sans-serif;
+    transform: rotate(-90deg);
+   
+}
+
+
+
