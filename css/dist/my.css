@@ -24,7 +24,7 @@ div, svg {
 }
 
 .container_spinner {
-  perspective: 2000px;
+  perspective: 900px;
   width: 300px;
   height: 400px;  
   left:50%;
