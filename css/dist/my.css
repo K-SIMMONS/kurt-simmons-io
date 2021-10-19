@@ -1,4 +1,4 @@
-
+/* 
 
 .enter_text{
   margin-top:180px;
@@ -6,12 +6,12 @@
 
 /* new 3d slider styles */
 
- .stage, .ring, .img {
+ /* .stage, .ring, .img {
   width:100%;
   height: 100%;
   transform-style: preserve-3d;
   user-select:none;
-}
+} */
 
 /* .stage {
   overflow:hidden;
@@ -19,7 +19,7 @@
   
 } */
 
-div, svg {
+/* div, svg {
   position: absolute;
 }
 
@@ -30,4 +30,4 @@ div, svg {
   left:50%;
   top:50%;
   transform:translate(-50%,-50%);
-}
+} */ 

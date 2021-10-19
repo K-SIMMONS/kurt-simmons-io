@@ -1,0 +1,24 @@
+body{
+    background-color: #1d1d1d;
+    font-family: 'Roboto', sans-serif;;
+    letter-spacing: -4px;
+    cursor: pointer;
+}
+
+.nav_text{
+    color: #FFF;
+    font-size: 4vw;
+}
+
+.nav_text:hover{
+    color: #F15DBF;
+    transition: 1s;
+}
+
+
+.tag_text{
+    color: #828282;
+    font-size: 40px;
+    font-family: 'Dancing Script', cursive;
+    letter-spacing: normal;
+}
