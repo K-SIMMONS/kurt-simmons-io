@@ -5,6 +5,10 @@ body{
     cursor: pointer;
 }
 
+a {
+    text-decoration: none;
+}
+
 .nav_text{
     color: #FFF;
     font-size: 4vw;
@@ -109,4 +113,40 @@ body{
     background: #0ECF50;
     width: 92%;
     height: 10px;
+}
+
+#projects{
+    margin-top: 200px;
+}
+
+#aboutme{
+    margin-top: 200px;
+}
+
+#contact{
+    margin-top: 200px;
+}
+
+.contact_description{
+    color: #828282;
+    font-size: 2.5vw;
+    font-family: 'Dancing Script', cursive;
+    letter-spacing: normal;
+    
+}
+
+.arrow{
+    margin-top: 150px;
+}
+
+.form_text{
+    color: #FFF;
+    font-size: 40px;
+    letter-spacing: normal;
+}
+
+.my_btn{
+    color: #FFF;
+    background: #F15DBF;
+    font-size: 2vw;
 }
