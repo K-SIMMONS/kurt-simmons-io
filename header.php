@@ -10,50 +10,54 @@
  */
 
 ?>
-<!doctype html>
-<html <?php language_attributes(); ?>>
+
+<!DOCTYPE html>
+<html lang="en">
 <head>
-	<meta charset="<?php bloginfo( 'charset' ); ?>">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="profile" href="https://gmpg.org/xfn/11">
-
-	<?php wp_head(); ?>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+  <title>portfolio</title>
 </head>
+<body>
+  
+  <nav>
+    <div class="container-fluid ">
+      <div class="row">
+        <div class="col-6">
+          <ul>
+            <p class="tag_text">&lt;html&gt;</p>
+            <p class="tag_text ms-5">&lt;body&gt;</p>
+          </ul>
+          <p class="tag_text ms-5">&lt;h2&gt;</p>
+          <h2 class="designedby_text ms-5"> designed <span class="secondary">By</span></h2>
+          <p class="tag_text_special">&lt;/h2&gt;</p>
+          <p class="tag_text ms-5">&lt;h1&gt;</p>
+          <h1 class="firstname_text ms-5">Kurt</h1>
+          <h1 class="lastname_text ms-5">Simmons</h1>
+          <p class="tag_text ms-5 text-end">&lt;/h1&gt;</p>
+          <p class="tag_text ms-5">&lt;p&gt;</p>
+          <p class="title_description_text ms-5">Frontend Developer - <span class="secondary"> Always Learning </span></p>
+          <p class="tag_text text-end">&lt;/p&gt;</p>
 
-<body <?php body_class(); ?>>
-<?php wp_body_open(); ?>
-<div id="page" class="site">
-	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'kurt-simmons-io' ); ?></a>
+        </div>
+        <div class="col-4 ms-auto ">
+          <ul class="mt-3">
+            <p class="tag_text"> &lt;ul&gt; </p>
+            <h2 class="nav_text ms-5"> &lt;mySkills&gt; </h2>
+            <h2 class="nav_text ms-5"> &lt;myWork&gt; </h2>
+            <h2 class="nav_text ms-5"> &lt;aboutMe&gt; </h2>
+            <h2 class="nav_text ms-5"> &lt;contactMe&gt; </h2>
+            <p class="tag_text text-end me-5"> &lt;/ul&gt; </p>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
 
-	<header id="masthead" class="site-header">
-		<div class="site-branding">
-			<?php
-			the_custom_logo();
-			if ( is_front_page() && is_home() ) :
-				?>
-				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-				<?php
-			else :
-				?>
-				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-				<?php
-			endif;
-			$kurt_simmons_io_description = get_bloginfo( 'description', 'display' );
-			if ( $kurt_simmons_io_description || is_customize_preview() ) :
-				?>
-				<p class="site-description"><?php echo $kurt_simmons_io_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p>
-			<?php endif; ?>
-		</div><!-- .site-branding -->
-
-		<nav id="site-navigation" class="main-navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'kurt-simmons-io' ); ?></button>
-			<?php
-			wp_nav_menu(
-				array(
-					'theme_location' => 'menu-1',
-					'menu_id'        => 'primary-menu',
-				)
-			);
-			?>
-		</nav><!-- #site-navigation -->
-	</header><!-- #masthead -->
