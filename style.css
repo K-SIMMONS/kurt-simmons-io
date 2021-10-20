@@ -15,10 +15,49 @@ body{
     transition: 1s;
 }
 
+.secondary{
+    color: #F15DBF;
+}
+
 
 .tag_text{
     color: #828282;
     font-size: 40px;
     font-family: 'Dancing Script', cursive;
     letter-spacing: normal;
+    line-height: 0.8;
+}
+
+.tag_text_special{
+    color: #828282;
+    font-size: 40px;
+    font-family: 'Dancing Script', cursive;
+    letter-spacing: normal;
+    line-height: 0.8;
+    margin-left: 550px;
+}
+
+.designedby_text{
+    color: #FFF;
+    font-size: 5vw;
+    line-height: 0.8;
+}
+
+.firstname_text{
+    color: #FFF;
+    font-size: 10vw;
+    line-height: 0.8;
+}
+
+.lastname_text{
+    color: #FFF;
+    font-size: 10vw;
+    letter-spacing: -10px;
+    line-height: 0.8;
+}
+
+.title_description_text{
+    color: #FFF;
+    font-size: 3vw;
+    line-height: 0.8;
 }
