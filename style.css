@@ -150,3 +150,73 @@ a {
     background: #F15DBF;
     font-size: 2vw;
 }
+
+
+@media screen and (max-width: 600px) {
+    body {
+        letter-spacing: normal;
+    }
+
+    .firstname_text{
+        letter-spacing: normal;
+    }
+
+    .lastname_text{
+        letter-spacing: normal;
+    }
+    
+    .tag_text {
+        font-size: 10px;
+    }
+
+    .tag_text_special {
+        font-size: 10px;
+        margin-left: 50%;
+    }
+
+    .tag_text_special_closing {
+        font-size: 10px;
+        margin-left: 50%;
+    }
+
+    .skillbox {
+        margin-left: 0px;
+    }
+
+    .chart_text {
+        margin-left: 0px;
+    }
+
+    .noMobile{
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 770px) {
+
+    body {
+        letter-spacing: normal;
+    }
+
+    .firstname_text{
+        letter-spacing: normal;
+    }
+
+    .lastname_text{
+        letter-spacing: normal;
+    }
+    
+    .tag_text {
+        font-size: 10px;
+    }
+
+    .tag_text_special {
+        font-size: 10px;
+    }
+
+    .tag_text_special_closing {
+        font-size: 10px;
+    }
+
+}
