@@ -76,8 +76,34 @@ a {
     line-height: 0.8;
 }
 
+/* !skills section styling */
+
+
 #skills {
     margin-top: 120px;
+}
+
+.skills_text{
+    color: #FFF;
+    font-size: 10vw;
+    line-height: 0.8;
+}
+
+.skills_tag_text{
+    color: #828282;
+    font-size: 40px;
+    font-family: 'Dancing Script', cursive;
+    letter-spacing: normal;
+    line-height: 0.8;
+}
+
+.skills_tag_text_special_closing{
+    color: #828282;
+    font-size: 40px;
+    font-family: 'Dancing Script', cursive;
+    letter-spacing: normal;
+    line-height: 0.8;
+    margin-left: 850px;
 }
 
 .chart_text{
@@ -101,30 +127,83 @@ a {
     background: #F15DBF;
     width: 76%;
     height: 10px;
+    border-radius: 20px;
 }
 
 .skill_level2{
     background: #4C53FF;
     width: 45%;
     height: 10px;
+    border-radius: 20px;
 }
 
 .skill_level3{
     background: #0ECF50;
     width: 92%;
     height: 10px;
+    border-radius: 20px;
 }
+
+/* !Project section stylings */
 
 #projects{
     margin-top: 200px;
 }
 
+.projects_text{
+    color: #FFF;
+    font-size: 10vw;
+    line-height: 0.8;
+}
+
+.project_title_description_text{
+    color: #FFF;
+    font-size: 3vw;
+    line-height: 0.8;
+}
+
+.project_tag_text{
+    color: #828282;
+    font-size: 40px;
+    font-family: 'Dancing Script', cursive;
+    letter-spacing: normal;
+    line-height: 0.8;
+}
+
+.project_tag_text_special_closing{
+    color: #828282;
+    font-size: 40px;
+    font-family: 'Dancing Script', cursive;
+    letter-spacing: normal;
+    line-height: 0.8;
+    margin-left: 730px;
+}
+/* !about me text */
 #aboutme{
     margin-top: 200px;
 }
 
+.aboutme_text{
+    color: #FFF;
+    font-size: 10vw;
+    line-height: 0.8;
+}
+
+.aboutme_description_text {
+    color: #FFF;
+    font-size: 3vw;
+    line-height: 0.8;
+}
+
+/* !Contact stylings */
 #contact{
     margin-top: 200px;
+}
+
+.contact_text{
+    color: #FFF;
+    font-size: 10vw;
+    line-height: 0.8;
 }
 
 .contact_description{
@@ -151,14 +230,63 @@ a {
     font-size: 2vw;
 }
 
+/* !Mobile stylings */
 
 @media screen and (max-width: 600px) {
+    
     body {
         letter-spacing: normal;
     }
 
+    .designedby_text{
+        font-size: 40px;
+        
+    }
+
     .firstname_text{
+        font-size: 100px;
+        letter-spacing: -10px;
+    }
+
+    .lastname_text{
+        font-size: 82px;
+        letter-spacing: -10px;
+    }
+
+    .title_description_text{
+        font-size:20px;
+    }
+
+    .ms-5{
+        margin-left: 0px !important; 
+        
+    }
+
+    .mt-4{
+        margin-top: 0px!important;
+    }
+
+    .skills_tag_text{
+        color: #828282;
+        font-size: 10px;
+        font-family: 'Dancing Script', cursive;
         letter-spacing: normal;
+        line-height: 0.8;
+        margin-left: 50px !important;
+    }
+    
+    .skills_tag_text_special_closing{
+        color: #828282;
+        font-size: 10px;
+        font-family: 'Dancing Script', cursive;
+        letter-spacing: normal;
+        line-height: 0.8;
+        margin-left: 330px !important;
+    }
+   
+    .skills_text{
+        font-size: 70px;
+        text-align: center;
     }
 
     .lastname_text{
@@ -171,7 +299,7 @@ a {
 
     .tag_text_special {
         font-size: 10px;
-        margin-left: 50%;
+        margin-left: 220px!important;
     }
 
     .tag_text_special_closing {
@@ -181,10 +309,73 @@ a {
 
     .skillbox {
         margin-left: 0px;
+        padding: 3px;
+        margin-left: 50px;
+        border: 2px solid #868686;
+        border-radius: 10px;
     }
 
     .chart_text {
         margin-left: 0px;
+        text-align: center;
+        font-size: 35px;
+    }
+
+    .projects_text{
+        font-size: 80px;
+        text-align: center !important;
+        
+    }
+
+    .project_title_description_text{
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .project_tag_text{
+        font-size: 10px;
+        letter-spacing: normal;
+        line-height: 0;
+        margin-left: 15px!important;
+    }
+    
+    .project_tag_text_special_closing{
+        font-size: 10px;
+        letter-spacing: normal;
+        line-height: 0.1;
+        margin-left: 330px!important;
+    }
+
+    .aboutme_text{
+        font-size: 60px;
+        line-height: 0.8;
+    }
+    
+    .aboutme_description_text {
+        font-size: 10px;
+        line-height: 0.8;
+    }
+    
+
+    .contact_text{
+        text-align: center;
+        font-size: 60px;
+        line-height: 0.8;
+    }
+    
+    .contact_description{
+        font-size: 10px;
+        font-family: 'Dancing Script', cursive;
+        letter-spacing: normal;
+        
+    }
+
+    .form_text{
+        font-size: 15px;
+    }
+
+    .my_btn{
+        font-size: 35px;
     }
 
     .noMobile{
@@ -193,10 +384,13 @@ a {
 
 }
 
+/* ! Tablet Styling */
+
 @media screen and (max-width: 770px) {
 
     body {
         letter-spacing: normal;
+        margin-left: 0px;
     }
 
     .firstname_text{
