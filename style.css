@@ -5,6 +5,10 @@ body{
     cursor: pointer;
 }
 
+.linebreak{
+    border: 3px double #F15DBF;
+}
+
 a {
     text-decoration: none;
 }
@@ -232,6 +236,12 @@ a {
 
 /* !Mobile stylings */
 
+@media screen and (min-width: 812px){
+    .mobileOnly{
+        display: none;
+    }
+}
+
 @media screen and (max-width: 600px) {
     
     body {
@@ -244,17 +254,19 @@ a {
     }
 
     .firstname_text{
-        font-size: 100px;
+        font-size: 130px;
         letter-spacing: -10px;
     }
 
     .lastname_text{
         font-size: 82px;
         letter-spacing: -10px;
+        text-align: center;
     }
 
     .title_description_text{
         font-size:20px;
+        text-align: center;
     }
 
     .ms-5{
