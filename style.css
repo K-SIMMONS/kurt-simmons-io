@@ -1,7 +1,6 @@
 body{
     background-color: #1d1d1d;
     font-family: 'Roboto', sans-serif;;
-    letter-spacing: -4px;
     cursor: pointer;
 }
 
@@ -15,7 +14,7 @@ a {
 
 .nav_text{
     color: #FFF;
-    font-size: 4vw;
+    font-size: 3.5vw;
 }
 
 .nav_text:hover{
@@ -30,7 +29,7 @@ a {
 
 .tag_text{
     color: #828282;
-    font-size: 40px;
+    font-size: 28px;
     font-family: 'Dancing Script', cursive;
     letter-spacing: normal;
     line-height: 0.8;
@@ -38,7 +37,7 @@ a {
 
 .tag_text_special{
     color: #828282;
-    font-size: 40px;
+    font-size: 28px;
     font-family: 'Dancing Script', cursive;
     letter-spacing: normal;
     line-height: 0.8;
@@ -47,7 +46,7 @@ a {
 
 .tag_text_special_closing{
     color: #828282;
-    font-size: 40px;
+    font-size: 28px;
     font-family: 'Dancing Script', cursive;
     letter-spacing: normal;
     line-height: 0.8;
@@ -63,13 +62,13 @@ a {
 
 .firstname_text{
     color: #FFF;
-    font-size: 10vw;
+    font-size: 9vw;
     line-height: 0.8;
 }
 
 .lastname_text{
     color: #FFF;
-    font-size: 10vw;
+    font-size: 9.5vw;
     letter-spacing: -10px;
     line-height: 0.8;
 }
@@ -78,6 +77,11 @@ a {
     color: #FFF;
     font-size: 3vw;
     line-height: 0.8;
+}
+
+/* !HomePage Styles */
+.home-content{
+    letter-spacing: -3px;
 }
 
 /* !skills section styling */
@@ -235,14 +239,11 @@ a {
 }
 
 /* !Mobile stylings */
-
-@media screen and (min-width: 812px){
+@media screen and (min-width: 279px) and (max-width: 759px){
+    
     .mobileOnly{
         display: none;
     }
-}
-
-@media screen and (max-width: 600px) {
     
     body {
         letter-spacing: normal;
@@ -251,6 +252,19 @@ a {
     .designedby_text{
         font-size: 40px;
         
+    }
+
+    .name-row{
+        order: 2;
+    }
+
+    .nav_text{
+        font-size: 4.5vw;
+        text-align: right;
+    }
+
+    .home-content{
+        letter-spacing: 0px;
     }
 
     .firstname_text{
@@ -266,7 +280,7 @@ a {
 
     .title_description_text{
         font-size:20px;
-        text-align: center;
+        line-height: 1;
     }
 
     .ms-5{
@@ -307,16 +321,19 @@ a {
     
     .tag_text {
         font-size: 10px;
+        display: none;
     }
 
     .tag_text_special {
         font-size: 10px;
         margin-left: 220px!important;
+        display: none;
     }
 
     .tag_text_special_closing {
         font-size: 10px;
         margin-left: 50%;
+        display: none;
     }
 
     .skillbox {
@@ -398,7 +415,7 @@ a {
 
 /* ! Tablet Styling */
 
-@media screen and (max-width: 770px) {
+@media screen and (min-width:760px) and (max-width: 1023px) {
 
     body {
         letter-spacing: normal;
@@ -425,4 +442,15 @@ a {
         font-size: 10px;
     }
 
+}
+
+/* Media Queries for Nest Hub */
+@media screen and (min-width:1024px) and (max-width:1153px){
+
+}
+
+/* Media Queries for Nest Hub MAX*/
+
+@media screen and (min-width: 1154px) and (max-width: 1340px){
+    
 }
