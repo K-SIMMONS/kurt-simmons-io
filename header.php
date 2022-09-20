@@ -23,41 +23,47 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+  <?php wp_head();?>
   <title>portfolio</title>
 </head>
 <body>
-  
-  <nav>
-    <div class="container-fluid ">
-      <div class="row">
-        <div class="col-6">
-          <ul>
-            <p class="tag_text">&lt;html&gt;</p>
-            <p class="tag_text ms-5">&lt;body&gt;</p>
-          </ul>
-          <p class="tag_text ms-5">&lt;h2&gt;</p>
-          <h2 class="designedby_text ms-5"> designed <span class="secondary">By</span></h2>
-          <p class="tag_text_special">&lt;/h2&gt;</p>
-          <p class="tag_text ms-5">&lt;h1&gt;</p>
-          <h1 class="firstname_text ms-5">Kurt</h1>
-          <h1 class="lastname_text ms-5">Simmons</h1>
-          <p class="tag_text ms-5 text-end">&lt;/h1&gt;</p>
-          <p class="tag_text ms-5">&lt;p&gt;</p>
-          <p class="title_description_text ms-5">Frontend Developer - <span class="secondary"> Always Learning </span></p>
-          <p class="tag_text text-end">&lt;/p&gt;</p>
+<?php
 
-        </div>
-        <div class="col-4 ms-auto ">
-          <ul class="mt-3">
-            <p class="tag_text"> &lt;ul&gt; </p>
-            <h2 class="nav_text ms-5"> &lt;mySkills&gt; </h2>
-            <h2 class="nav_text ms-5"> &lt;myWork&gt; </h2>
-            <h2 class="nav_text ms-5"> &lt;aboutMe&gt; </h2>
-            <h2 class="nav_text ms-5"> &lt;contactMe&gt; </h2>
-            <p class="tag_text text-end me-5"> &lt;/ul&gt; </p>
-          </ul>
-        </div>
-      </div>
-    </div>
+global$template;
+
+if (basename($template)=='front-page.php'): ?>
+
+<header class ="header"></header>
+
+
+
+<?php else: ?>
+
+<header class = "header">
+  <nav class="navbar navbar-expand-md navbar-dark bg-none" id = "navBar"role="navigation">
+    <div class="container-fluid">
+     
+      <!-- Brand and toggle get grouped for better mobile display -->
+          <button class="navbar-toggler collapsed d-flex d-lg-none flex-column justify-content-around" onclick = "handleMenu()" type="button" data-bs-toggle="collapse" data-bs-target="#bs-example-navbar-collapse-1" aria-controls="bs-example-navbar-collapse-1" aria-expanded="false" aria-label="<?php esc_attr_e( 'Toggle navigation', 'your-theme-slug' ); ?>">
+        <span class="toggler-icon top-bar"></span>
+        <span class="toggler-icon middle-bar"></span>
+        <span class="toggler-icon bottom-bar"></span>
+          </button>
+         <?php the_custom_logo();?> 
+          <?php
+          wp_nav_menu( array(
+              'theme_location'    => 'menu-1',
+              'depth'             => 2,
+              'container'         => 'div',
+              'container_class'   => 'collapse navbar-collapse',
+              'container_id'      => 'bs-example-navbar-collapse-1',
+              'menu_class'        => 'nav navbar-nav ',
+              'fallback_cb'       => 'WP_Bootstrap_Navwalker::fallback',
+              'walker'            => new WP_Bootstrap_Navwalker(),
+          ) );
+          ?>
+   </div>
   </nav>
+</header>
 
+<?php endif; ?>
