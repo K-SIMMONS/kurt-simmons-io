@@ -1,7 +1,12 @@
 body{
     background-color: #1d1d1d;
     font-family: 'Roboto', sans-serif;;
-    cursor: pointer;
+    overflow-x: hidden;
+}
+
+.custom-logo{
+    height: auto;
+    width: 130px;
 }
 
 .linebreak{
@@ -10,6 +15,16 @@ body{
 
 a {
     text-decoration: none;
+}
+
+.nav{
+    font-size: 2vw;
+}
+
+.nav > li {
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-top: 20px;
 }
 
 .nav_text{
@@ -79,23 +94,27 @@ a {
     line-height: 0.8;
 }
 
-/* !HomePage Styles */
 .home-content{
     letter-spacing: -3px;
 }
 
-/* !skills section styling */
+/* !Skills stylings */
 
+.skills-and-attributes-heading{
+    color: #FFF;
+    font-size: 9vw;
+    line-height: 0.8;
+    margin-left: 60px;
+}
+
+.skills-and-attributes-image{
+    text-align: center;
+}
 
 #skills {
     margin-top: 120px;
 }
 
-.skills_text{
-    color: #FFF;
-    font-size: 10vw;
-    line-height: 0.8;
-}
 
 .skills_tag_text{
     color: #828282;
@@ -117,7 +136,9 @@ a {
 .chart_text{
     color: #FFF;
     font-size: 3vw;
-    margin-left: 300px;
+    width: 75%;
+    /* margin-left: 300px; */
+    margin: auto;
     margin-top: 4rem;
 }
 
@@ -126,7 +147,8 @@ a {
     padding: 10px;
     box-sizing: border-box;
     width: 75%;
-    margin-left: 300px;
+    /* margin-left: 200px; */
+    margin: auto;
     border: 5px solid #868686;
     border-radius: 20px;
 }
@@ -158,16 +180,18 @@ a {
     margin-top: 200px;
 }
 
-.projects_text{
+.my-work-heading{
     color: #FFF;
     font-size: 10vw;
     line-height: 0.8;
+    margin-left:50px
 }
 
-.project_title_description_text{
-    color: #FFF;
+.my-work-subheading{
+    color: #F15DBF;
     font-size: 3vw;
-    line-height: 0.8;
+    padding-top: 20px;
+    margin-left:55px
 }
 
 .project_tag_text{
@@ -236,6 +260,10 @@ a {
     color: #FFF;
     background: #F15DBF;
     font-size: 2vw;
+}
+
+#portfolio-tiles{
+    margin-top: 100px;
 }
 
 /* !Mobile stylings */
