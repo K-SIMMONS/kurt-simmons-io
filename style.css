@@ -263,8 +263,33 @@ a {
 }
 
 #portfolio-tiles{
-    margin-top: 100px;
+    margin-top: 40px;
 }
+
+.portfolio-container{
+    width: 70%;
+    margin: auto;
+}
+
+.portfolio-item{
+    background-color: #1d1d1d;
+    width: 100%;
+    height: auto;
+    z-index: 1;
+}
+
+.img-background{
+    opacity: 0.5;
+    width: 100%;
+    height: auto;
+    transition: 0.3s;
+}
+
+.portfolio-item > a :hover{
+    opacity: 0.95;
+    transition: 0.3s;
+}
+
 
 /* !Mobile stylings */
 @media screen and (min-width: 279px) and (max-width: 759px){
