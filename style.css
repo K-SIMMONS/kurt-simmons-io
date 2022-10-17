@@ -155,21 +155,35 @@ a {
 
 .skill_level1{
     background: #F15DBF;
-    width: 76%;
+    width: 90%;
     height: 10px;
     border-radius: 20px;
 }
 
 .skill_level2{
     background: #4C53FF;
-    width: 45%;
+    width: 65%;
     height: 10px;
     border-radius: 20px;
 }
 
 .skill_level3{
     background: #0ECF50;
-    width: 92%;
+    width: 95%;
+    height: 10px;
+    border-radius: 20px;
+}
+
+.skill_level4{
+    background: #FFF;
+    width: 85%;
+    height: 10px;
+    border-radius: 20px;
+}
+
+.skill_level5{
+    background: #FC8F03;
+    width: 60%;
     height: 10px;
     border-radius: 20px;
 }
@@ -263,7 +277,7 @@ a {
 }
 
 #portfolio-tiles{
-    margin-top: 40px;
+    margin-top: 15px;
 }
 
 .portfolio-container{
