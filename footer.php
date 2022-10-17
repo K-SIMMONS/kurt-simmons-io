@@ -17,7 +17,7 @@ if (basename($template)=='front-page.php'): ?>
 <footer class="footer"></footer>
 
 <?php else: ?>
-<footer class="footer">myFooter</footer>
+<footer class="footer"></footer>
 
 <?php endif; ?>
 <?php wp_footer();?>
