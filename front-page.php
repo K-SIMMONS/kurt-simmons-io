@@ -26,7 +26,7 @@
             <p class="tag_text"> &lt;ul&gt; </p>
             <a href="/my-skills"> <h2 class="nav_text ms-5"> &lt;mySkills&gt; </h2> </a>
             <a href="/my-work"> <h2 class="nav_text ms-5"> &lt;myWork&gt; </h2> </a>
-            <a href="/about-me"> <h2 class="nav_text ms-5"> &lt;aboutMe&gt; </h2> </a>
+            <a href="/about"> <h2 class="nav_text ms-5"> &lt;aboutMe&gt; </h2> </a>
             <a href="/contact"> <h2 class="nav_text ms-5"> &lt;contactMe&gt; </h2> </a>
             <p class="tag_text text-end me-5"> &lt;/ul&gt; </p>
           </ul>
