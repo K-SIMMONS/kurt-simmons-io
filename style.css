@@ -255,15 +255,24 @@ a {
     margin: auto;
 }
 
+.about-me-music-heading{
+    color: #FFF;
+    font-size: 2vw;
+    padding-bottom: 10px;
+    line-height: 0.8;
+}
+
 /* !Contact stylings */
 #contact{
     margin-top: 200px;
 }
 
-.contact_text{
+.contact-heading{
     color: #FFF;
     font-size: 10vw;
-    line-height: 0.8;
+    line-height: 0.85;
+    text-align: start;
+    padding-left: 60px;
 }
 
 .contact_description{
@@ -275,21 +284,59 @@ a {
 }
 
 .arrow{
-    margin-top: 150px;
+    margin-top: 100px;
 }
 
-.form_text{
+.wpforms-field-container{
+    margin-left: 80px !important;
+}
+
+.wpforms-submit-container{
+    margin-left: 100px !important;
+    text-align: center;
+    padding-top: 30px !important;
+}
+
+.wpforms-submit-container > input > input > input > input > button{
+    margin: auto !important;
+}
+
+
+
+.wpforms-field-label{
     color: #FFF;
-    font-size: 40px;
+    font-size: 1.2vw !important;
     letter-spacing: normal;
 }
 
-.my_btn{
+.wpforms-field-sublabel{
     color: #FFF;
-    background: #F15DBF;
-    font-size: 2vw;
+    font-size: .8vw !important;
+    letter-spacing: normal;
 }
 
+
+.wpforms-submit{
+    color: #FFF !important;
+    background: #F15DBF !important;
+    font-size: 1.2vw !important;
+    width: 20% !important;
+    margin: auto !important;
+    border-radius: 15px !important;
+    border-color: none !important;
+    padding: 2px 15px !important;
+    transition: .8s;
+}
+
+.wpforms-form input[type=submit]:hover, 
+.wpforms-form input[type=submit]:active, 
+.wpforms-form button[type=submit]:hover, 
+.wpforms-form button[type=submit]:active, 
+.wpforms-form .wpforms-page-button:hover, 
+.wpforms-form .wpforms-page-button:active {
+    background-color: #0ECF50 !important; /* Darker grey background */
+    transition: .8s;
+}
 #portfolio-tiles{
     margin-top: 15px;
 }
@@ -318,7 +365,41 @@ a {
     transition: 0.3s;
 }
 
+/* !Conformation Stylings */
+.conformation-heading{
+    color: #FFF;
+    text-align: center;
+    font-size: 7vw;
+}
 
+.conformation-sub-heading{
+    color: #FFF !important;
+    font-size: 2vw;
+    text-align: center;
+    padding-top: 30px;
+    transition: .8s;
+}
+
+.wp-block-button__link{
+    background-color: #F15DBF !important;
+    transition: .8s;
+}
+
+.wp-block-button__link :hover{
+    background-color: #0ECF50 !important;
+    transition: .8s;
+}
+
+.conformation-bth-button {
+    color: #FFF;
+    font-size: 1.2vw;
+    transition: .8s !important;
+  }
+
+.conformation-bth-button :hover{
+  transition: .8s;
+  background-color: #0ECF50 !important;
+}
 /* !Mobile stylings */
 @media screen and (min-width: 279px) and (max-width: 759px){
     

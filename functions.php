@@ -148,6 +148,8 @@ function kurt_simmons_io_scripts() {
 	wp_enqueue_script('bootstrap javascript' , get_theme_file_uri() . '/js/bootstrap.min.js', array(), '1.0', true);
 	wp_enqueue_script('kurt simmons IO javascript' , get_theme_file_uri() . '/js/index.js', array(), '1.0', true);
 	wp_enqueue_script( 'kurt-simmons-io-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
+	wp_enqueue_script('confetti javascript' , get_theme_file_uri() . '/js/confetti.js', array(), '1.0', true);
+
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
