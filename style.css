@@ -30,11 +30,12 @@ a {
 .nav_text{
     color: #FFF;
     font-size: 3.5vw;
+    transition: .8s;
 }
 
 .nav_text:hover{
     color: #F15DBF;
-    transition: 1s;
+    transition: .8s;
 }
 
 .secondary{
@@ -229,16 +230,29 @@ a {
     margin-top: 200px;
 }
 
-.aboutme_text{
+.about-me-heading{
     color: #FFF;
-    font-size: 10vw;
+    font-size: 8vw;
     line-height: 0.8;
+    text-align: center;
 }
 
-.aboutme_description_text {
+.about-me-sub-heading {
     color: #FFF;
-    font-size: 3vw;
+    font-size: 2vw;
     line-height: 0.8;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.carousel-container{
+    width: 80%;
+    margin: auto;
+}
+
+.spotify-container{
+    width: 80%;
+    margin: auto;
 }
 
 /* !Contact stylings */
