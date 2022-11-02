@@ -1,17 +1,16 @@
-var myCanvas = document.createElement('canvas');
-document.body.appendChild(myCanvas);
+let toggled = false;
+function handleMenu() {
+  if(toggled === false){
+    // when clicked
+    toggled = true;
+    document.querySelector('.custom-logo').style.visibility = 'hidden';
+    document.getElementById('mobile-overlay').classList.add('mobile-overlay');
+  }
 
-var myConfetti = confetti.create(myCanvas, {
-  resize: true,
-  useWorker: true
-});
-myConfetti({
-  particleCount: 100,
-  spread: 160
-  // any other options from the global
-  // confetti function
-});
-
-if (basename($template)=='page-conformation.php'){
-    confetti();
+  else{
+    // when idle
+    document.querySelector('.custom-logo').style.visibility = 'visible';
+    document.getElementById('mobile-overlay').classList.remove('mobile-overlay')
+    toggled = false;
+  }
 }

@@ -4,6 +4,7 @@ body{
     overflow-x: hidden;
 }
 
+
 .custom-logo{
     height: auto;
     width: 130px;
@@ -16,6 +17,80 @@ body{
 a {
     text-decoration: none;
 }
+
+.navbar-toggler{
+	width: 20px;
+	height: 20px;
+	position: relative;
+	transition: .5s ease-in-out;
+}
+
+.navbar-toggler,
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+	outline: none;
+	box-shadow: none;
+	border: 0;
+}
+
+.navbar-toggler span {
+	margin: 0;
+	padding: 0;
+}
+
+.toggler-icon {
+	display: block;
+	position: absolute;
+	height: 3px;
+	width: 100%;
+	background: #F15DBF;
+	border-radius: 1px;
+	opacity: 1;
+	left: 0;
+	transform: rotate(0deg);
+	transition: .25s ease-in-out;
+}
+
+.middle-bar{
+	margin-top: 0px;
+}
+
+/* when navigation is clicked */
+
+.navbar-toggler .top-bar{
+	margin-top: 0px;
+	transform: rotate(135deg);
+}
+
+.navbar-toggler .middle-bar{
+	opacity: 0;
+	filter: alpha(opacity=0);
+}
+
+.navbar-toggler .bottom-bar{
+	margin-top: 0px;
+	transform: rotate(-135deg);
+    
+}
+
+/* toggler at resting state */
+
+.navbar-toggler.collapsed .top-bar{
+	margin-top: -20px;
+	transform: rotate(0deg);
+}
+
+.navbar-toggler.collapsed .middle-bar{
+	opacity: 1;
+	filter: alpha(opacity=100);
+}
+
+.navbar-toggler.collapsed .bottom-bar{
+	margin-top: 20px;
+	transform: rotate(0deg);
+} 
+
 
 .nav{
     font-size: 2vw;
@@ -225,6 +300,36 @@ a {
     line-height: 0.8;
     margin-left: 730px;
 }
+
+#portfolio-tiles{
+    margin-top: 15px;
+}
+
+.portfolio-container{
+    width: 70%;
+    margin: auto;
+}
+
+.portfolio-item{
+    background-color: #1d1d1d;
+    width: 100%;
+    height: auto;
+    z-index: 1;
+}
+
+.img-background{
+    opacity: 0.5;
+    width: 100%;
+    height: auto;
+    transition: 0.3s;
+}
+
+.portfolio-item > a :hover{
+    opacity: 0.95;
+    transition: 0.3s;
+}
+
+
 /* !about me text */
 #aboutme{
     margin-top: 200px;
@@ -337,33 +442,6 @@ a {
     background-color: #0ECF50 !important; /* Darker grey background */
     transition: .8s;
 }
-#portfolio-tiles{
-    margin-top: 15px;
-}
-
-.portfolio-container{
-    width: 70%;
-    margin: auto;
-}
-
-.portfolio-item{
-    background-color: #1d1d1d;
-    width: 100%;
-    height: auto;
-    z-index: 1;
-}
-
-.img-background{
-    opacity: 0.5;
-    width: 100%;
-    height: auto;
-    transition: 0.3s;
-}
-
-.portfolio-item > a :hover{
-    opacity: 0.95;
-    transition: 0.3s;
-}
 
 /* !Conformation Stylings */
 .conformation-heading{
@@ -400,177 +478,238 @@ a {
   transition: .8s;
   background-color: #0ECF50 !important;
 }
-/* !Mobile stylings */
+/* ***************************************************************************?Mobile stylings****************************************************************** */
 @media screen and (min-width: 279px) and (max-width: 759px){
     
     .mobileOnly{
         display: none;
     }
+
+    .mobile-overlay{
+        width: 100%;
+        height: 98%;
+        background-color: #1d1d1d;
+        z-index: 8;
+        opacity: 1;
+        position: absolute;
+    }
+    
     
     body {
         letter-spacing: normal;
     }
 
-    .designedby_text{
-        font-size: 40px;
-        
+    /* ?Header Mobile Stylings */
+
+    .custom-logo-link{
+        width: 65%;
     }
 
-    .name-row{
-        order: 2;
+    .custom-logo{
+        width: 40% !important;
+        padding-top: 5px; 
+    }
+
+    .nav{
+        font-size: 35px !important;
+    }
+
+    .nav >li {
+        margin-top: 50px;
     }
 
     .nav_text{
         font-size: 4.5vw;
         text-align: right;
     }
-
+    
     .home-content{
         letter-spacing: 0px;
     }
 
+    /* ?FrontPage Mobile Stylings */
+
+    .designedby_text{
+        font-size: 13vw;
+        margin-left: 0px !important; 
+    }
+
+    .name-row{
+        order: 2;
+    }
+
     .firstname_text{
-        font-size: 130px;
-        letter-spacing: -10px;
+        font-size: 26vw;
+        margin-left: 0px !important; 
     }
 
     .lastname_text{
-        font-size: 82px;
-        letter-spacing: -10px;
-        text-align: center;
+        font-size: 20vw;
+        margin-left: 0px !important; 
+        letter-spacing: normal;
     }
 
     .title_description_text{
-        font-size:20px;
+        font-size:5vw;
         line-height: 1;
-    }
-
-    .ms-5{
         margin-left: 0px !important; 
-        
     }
 
-    .mt-4{
-        margin-top: 0px!important;
-    }
-
-    .skills_tag_text{
-        color: #828282;
-        font-size: 10px;
-        font-family: 'Dancing Script', cursive;
-        letter-spacing: normal;
-        line-height: 0.8;
-        margin-left: 50px !important;
-    }
-    
-    .skills_tag_text_special_closing{
-        color: #828282;
-        font-size: 10px;
-        font-family: 'Dancing Script', cursive;
-        letter-spacing: normal;
-        line-height: 0.8;
-        margin-left: 330px !important;
-    }
-   
-    .skills_text{
-        font-size: 70px;
-        text-align: center;
-    }
-
-    .lastname_text{
-        letter-spacing: normal;
-    }
-    
     .tag_text {
-        font-size: 10px;
         display: none;
     }
 
     .tag_text_special {
-        font-size: 10px;
-        margin-left: 220px!important;
         display: none;
     }
 
     .tag_text_special_closing {
-        font-size: 10px;
-        margin-left: 50%;
         display: none;
     }
 
+    /* ?Skills Mobile Stylings */
+
     .skillbox {
-        margin-left: 0px;
         padding: 3px;
-        margin-left: 50px;
+        margin: auto;
         border: 2px solid #868686;
         border-radius: 10px;
     }
 
     .chart_text {
-        margin-left: 0px;
-        text-align: center;
-        font-size: 35px;
-    }
-
-    .projects_text{
-        font-size: 80px;
         text-align: center !important;
-        
-    }
-
-    .project_title_description_text{
         font-size: 25px;
+    }
+
+    .wp-block-spacer.spacer-bottom{
+        height: 50px !important;
+    }
+
+    .skills-and-attributes-heading{
+        font-size: 17vw;
         text-align: center;
+        margin-left: 0px;
+
     }
 
-    .project_tag_text{
-        font-size: 10px;
-        letter-spacing: normal;
-        line-height: 0;
-        margin-left: 15px!important;
-    }
-    
-    .project_tag_text_special_closing{
-        font-size: 10px;
-        letter-spacing: normal;
-        line-height: 0.1;
-        margin-left: 330px!important;
+    .skills-and-attributes-image{
+        margin: auto;
+        width: 80%;
+        display: none;
     }
 
-    .aboutme_text{
-        font-size: 60px;
-        line-height: 0.8;
-    }
-    
-    .aboutme_description_text {
-        font-size: 10px;
-        line-height: 0.8;
-    }
-    
+    /* ?Projects Mobile Stylings */
 
-    .contact_text{
-        text-align: center;
-        font-size: 60px;
-        line-height: 0.8;
+    .wp-block-spacer.spacer-mobile{
+        height: 30px !important;
     }
-    
-    .contact_description{
-        font-size: 10px;
-        font-family: 'Dancing Script', cursive;
-        letter-spacing: normal;
+
+    .my-work-heading{
+        font-size: 18vw;
+        text-align: center !important;
+        margin-left: 0px;
         
     }
 
-    .form_text{
-        font-size: 15px;
+    .my-work-subheading{
+        font-size: 7vw;
+        text-align: center;
+        margin-left: 0px;
     }
 
-    .my_btn{
-        font-size: 35px;
+    /* ?About Me Mobile Stylings  */
+
+    .about-me-heading{
+        font-size: 15vw;
+        text-align: center !important;
+        margin-left: 0px;
+    }
+    
+    .about-me-sub-heading {
+        font-size: 5vw;
+        text-align: center !important;
+        margin-left: 0px;
+        padding-top: 0px;
+        line-height: 1.2;
+    }
+    
+
+    .about-me-music-heading{
+        font-size: 7vw;
+        text-align: center;
+        
     }
 
-    .noMobile{
-        display: none;
+    iframe{
+        margin-top: 5px;
+        margin-bottom: 80px;
+    }
+
+    /* ?Contact Mobile Stylings */
+
+    .contact-heading{
+        padding-left: 0px;
+        text-align: center;
+        font-size: 14vw;
+    }
+
+    .wpforms-field-container{
+        margin-left: 0px !important;
+    }
+
+    .wpforms-submit-container{
+        margin-left: 0px !important;
+        text-align: center;
+        padding-top: 30px !important;
+    }
+
+    .wpforms-submit-container > input > input > input > input > button{
+        margin: auto !important;
+    }
+
+    .wpforms-field-label{
+        color: #FFF;
+        font-size: 5vw !important;
+      
+    }
+    
+    .wpforms-field-sublabel{
+        color: #FFF;
+        font-size: 3vw !important;
+    }
+    
+    
+    .wpforms-submit{
+        font-size: 4vw !important;
+        width: 30% !important;
+        margin: auto !important;
+        padding: 4px 15px !important;
+      
+    }
+
+    .form-field-mobile{
+        width: 90% !important;
+        margin: auto !important;
+    }
+    
+    /* ?Conformation Page Mobile Stylings */
+
+    .conformation-heading{
+        font-size: 12vw;
+    }
+
+    
+    .conformation-bth-button {
+        color: #FFF;
+        font-size: 4vw;
+        transition: .8s !important;
+        padding-top: 2px !important;
+        margin-top: 20px !important;
+      }
+    
+    .conformation-bth-button :hover{
+      transition: .8s;
+      background-color: #0ECF50 !important;
     }
 
 }
