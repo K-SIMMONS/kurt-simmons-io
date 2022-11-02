@@ -144,9 +144,8 @@ function kurt_simmons_io_scripts() {
 	wp_enqueue_style( 'main stylesheet' , get_theme_file_uri('/style.css'));
 	wp_enqueue_style( 'kurt-simmons-io-style', get_stylesheet_uri(), array(), _S_VERSION );
 	wp_style_add_data( 'kurt-simmons-io-style', 'rtl', 'replace' );
-	wp_enqueue_script( 'bootstrap-javascript' , get_template_directory_uri() . '/js/bootstrap.min.js');
 	wp_enqueue_script('bootstrap javascript' , get_theme_file_uri() . '/js/bootstrap.min.js', array(), '1.0', true);
-	wp_enqueue_script('kurt simmons IO javascript' , get_theme_file_uri() . '/js/index.js', array(), '1.0', true);
+	wp_enqueue_script('my-javascript' , get_theme_file_uri() . '/js/index.js', array(), '1.0', true);
 	wp_enqueue_script( 'kurt-simmons-io-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
 	wp_enqueue_script('confetti javascript' , get_theme_file_uri() . '/js/confetti.js', array(), '1.0', true);
 
