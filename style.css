@@ -1,8 +1,13 @@
 body{
     background-color: #1d1d1d;
     font-family: 'Roboto', sans-serif;;
-    letter-spacing: -4px;
-    cursor: pointer;
+    overflow-x: hidden;
+}
+
+
+.custom-logo{
+    height: auto;
+    width: 130px;
 }
 
 .linebreak{
@@ -13,14 +18,99 @@ a {
     text-decoration: none;
 }
 
+.navbar-toggler{
+	width: 20px;
+	height: 20px;
+	position: relative;
+	transition: .5s ease-in-out;
+}
+
+.navbar-toggler,
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+	outline: none;
+	box-shadow: none;
+	border: 0;
+}
+
+.navbar-toggler span {
+	margin: 0;
+	padding: 0;
+}
+
+.toggler-icon {
+	display: block;
+	position: absolute;
+	height: 3px;
+	width: 100%;
+	background: #F15DBF;
+	border-radius: 1px;
+	opacity: 1;
+	left: 0;
+	transform: rotate(0deg);
+	transition: .25s ease-in-out;
+}
+
+.middle-bar{
+	margin-top: 0px;
+}
+
+/* when navigation is clicked */
+
+.navbar-toggler .top-bar{
+	margin-top: 0px;
+	transform: rotate(135deg);
+}
+
+.navbar-toggler .middle-bar{
+	opacity: 0;
+	filter: alpha(opacity=0);
+}
+
+.navbar-toggler .bottom-bar{
+	margin-top: 0px;
+	transform: rotate(-135deg);
+    
+}
+
+/* toggler at resting state */
+
+.navbar-toggler.collapsed .top-bar{
+	margin-top: -20px;
+	transform: rotate(0deg);
+}
+
+.navbar-toggler.collapsed .middle-bar{
+	opacity: 1;
+	filter: alpha(opacity=100);
+}
+
+.navbar-toggler.collapsed .bottom-bar{
+	margin-top: 20px;
+	transform: rotate(0deg);
+} 
+
+
+.nav{
+    font-size: 2vw;
+}
+
+.nav > li {
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-top: 20px;
+}
+
 .nav_text{
     color: #FFF;
-    font-size: 4vw;
+    font-size: 3.5vw;
+    transition: .8s;
 }
 
 .nav_text:hover{
     color: #F15DBF;
-    transition: 1s;
+    transition: .8s;
 }
 
 .secondary{
@@ -30,7 +120,7 @@ a {
 
 .tag_text{
     color: #828282;
-    font-size: 40px;
+    font-size: 28px;
     font-family: 'Dancing Script', cursive;
     letter-spacing: normal;
     line-height: 0.8;
@@ -38,7 +128,7 @@ a {
 
 .tag_text_special{
     color: #828282;
-    font-size: 40px;
+    font-size: 28px;
     font-family: 'Dancing Script', cursive;
     letter-spacing: normal;
     line-height: 0.8;
@@ -47,7 +137,7 @@ a {
 
 .tag_text_special_closing{
     color: #828282;
-    font-size: 40px;
+    font-size: 28px;
     font-family: 'Dancing Script', cursive;
     letter-spacing: normal;
     line-height: 0.8;
@@ -63,13 +153,13 @@ a {
 
 .firstname_text{
     color: #FFF;
-    font-size: 10vw;
+    font-size: 9vw;
     line-height: 0.8;
 }
 
 .lastname_text{
     color: #FFF;
-    font-size: 10vw;
+    font-size: 9.5vw;
     letter-spacing: -10px;
     line-height: 0.8;
 }
@@ -80,18 +170,27 @@ a {
     line-height: 0.8;
 }
 
-/* !skills section styling */
+.home-content{
+    letter-spacing: -3px;
+}
 
+/* !Skills stylings */
+
+.skills-and-attributes-heading{
+    color: #FFF;
+    font-size: 9vw;
+    line-height: 0.8;
+    margin-left: 60px;
+}
+
+.skills-and-attributes-image{
+    text-align: center;
+}
 
 #skills {
     margin-top: 120px;
 }
 
-.skills_text{
-    color: #FFF;
-    font-size: 10vw;
-    line-height: 0.8;
-}
 
 .skills_tag_text{
     color: #828282;
@@ -113,7 +212,9 @@ a {
 .chart_text{
     color: #FFF;
     font-size: 3vw;
-    margin-left: 300px;
+    width: 75%;
+    /* margin-left: 300px; */
+    margin: auto;
     margin-top: 4rem;
 }
 
@@ -122,28 +223,43 @@ a {
     padding: 10px;
     box-sizing: border-box;
     width: 75%;
-    margin-left: 300px;
+    /* margin-left: 200px; */
+    margin: auto;
     border: 5px solid #868686;
     border-radius: 20px;
 }
 
 .skill_level1{
     background: #F15DBF;
-    width: 76%;
+    width: 90%;
     height: 10px;
     border-radius: 20px;
 }
 
 .skill_level2{
     background: #4C53FF;
-    width: 45%;
+    width: 65%;
     height: 10px;
     border-radius: 20px;
 }
 
 .skill_level3{
     background: #0ECF50;
-    width: 92%;
+    width: 95%;
+    height: 10px;
+    border-radius: 20px;
+}
+
+.skill_level4{
+    background: #FFF;
+    width: 85%;
+    height: 10px;
+    border-radius: 20px;
+}
+
+.skill_level5{
+    background: #FC8F03;
+    width: 60%;
     height: 10px;
     border-radius: 20px;
 }
@@ -154,16 +270,18 @@ a {
     margin-top: 200px;
 }
 
-.projects_text{
+.my-work-heading{
     color: #FFF;
     font-size: 10vw;
     line-height: 0.8;
+    margin-left:50px
 }
 
-.project_title_description_text{
-    color: #FFF;
+.my-work-subheading{
+    color: #F15DBF;
     font-size: 3vw;
-    line-height: 0.8;
+    padding-top: 20px;
+    margin-left:55px
 }
 
 .project_tag_text{
@@ -182,20 +300,70 @@ a {
     line-height: 0.8;
     margin-left: 730px;
 }
+
+#portfolio-tiles{
+    margin-top: 15px;
+}
+
+.portfolio-container{
+    width: 70%;
+    margin: auto;
+}
+
+.portfolio-item{
+    background-color: #1d1d1d;
+    width: 100%;
+    height: auto;
+    z-index: 1;
+}
+
+.img-background{
+    opacity: 0.5;
+    width: 100%;
+    height: auto;
+    transition: 0.3s;
+}
+
+.portfolio-item > a :hover{
+    opacity: 0.95;
+    transition: 0.3s;
+}
+
+
 /* !about me text */
 #aboutme{
     margin-top: 200px;
 }
 
-.aboutme_text{
+.about-me-heading{
     color: #FFF;
-    font-size: 10vw;
+    font-size: 8vw;
     line-height: 0.8;
+    text-align: center;
 }
 
-.aboutme_description_text {
+.about-me-sub-heading {
     color: #FFF;
-    font-size: 3vw;
+    font-size: 2vw;
+    line-height: 0.8;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.carousel-container{
+    width: 80%;
+    margin: auto;
+}
+
+.spotify-container{
+    width: 80%;
+    margin: auto;
+}
+
+.about-me-music-heading{
+    color: #FFF;
+    font-size: 2vw;
+    padding-bottom: 10px;
     line-height: 0.8;
 }
 
@@ -204,10 +372,12 @@ a {
     margin-top: 200px;
 }
 
-.contact_text{
+.contact-heading{
     color: #FFF;
     font-size: 10vw;
-    line-height: 0.8;
+    line-height: 0.85;
+    text-align: start;
+    padding-left: 60px;
 }
 
 .contact_description{
@@ -219,186 +389,334 @@ a {
 }
 
 .arrow{
-    margin-top: 150px;
+    margin-top: 100px;
 }
 
-.form_text{
+.wpforms-field-container{
+    margin-left: 80px !important;
+}
+
+.wpforms-submit-container{
+    margin-left: 100px !important;
+    text-align: center;
+    padding-top: 30px !important;
+}
+
+.wpforms-submit-container > input > input > input > input > button{
+    margin: auto !important;
+}
+
+
+
+.wpforms-field-label{
     color: #FFF;
-    font-size: 40px;
+    font-size: 1.2vw !important;
     letter-spacing: normal;
 }
 
-.my_btn{
+.wpforms-field-sublabel{
     color: #FFF;
-    background: #F15DBF;
-    font-size: 2vw;
+    font-size: .8vw !important;
+    letter-spacing: normal;
 }
 
-/* !Mobile stylings */
 
-@media screen and (min-width: 812px){
+.wpforms-submit{
+    color: #FFF !important;
+    background: #F15DBF !important;
+    font-size: 1.2vw !important;
+    width: 20% !important;
+    margin: auto !important;
+    border-radius: 15px !important;
+    border-color: none !important;
+    padding: 2px 15px !important;
+    transition: .8s;
+}
+
+.wpforms-form input[type=submit]:hover, 
+.wpforms-form input[type=submit]:active, 
+.wpforms-form button[type=submit]:hover, 
+.wpforms-form button[type=submit]:active, 
+.wpforms-form .wpforms-page-button:hover, 
+.wpforms-form .wpforms-page-button:active {
+    background-color: #0ECF50 !important; /* Darker grey background */
+    transition: .8s;
+}
+
+/* !Conformation Stylings */
+.conformation-heading{
+    color: #FFF;
+    text-align: center;
+    font-size: 7vw;
+}
+
+.conformation-sub-heading{
+    color: #FFF !important;
+    font-size: 2vw;
+    text-align: center;
+    padding-top: 30px;
+    transition: .8s;
+}
+
+.wp-block-button__link{
+    background-color: #F15DBF !important;
+    transition: .8s;
+}
+
+.wp-block-button__link :hover{
+    background-color: #0ECF50 !important;
+    transition: .8s;
+}
+
+.conformation-bth-button {
+    color: #FFF;
+    font-size: 1.2vw;
+    transition: .8s !important;
+  }
+
+.conformation-bth-button :hover{
+  transition: .8s;
+  background-color: #0ECF50 !important;
+}
+/* ***************************************************************************?Mobile stylings****************************************************************** */
+@media screen and (min-width: 279px) and (max-width: 759px){
+    
     .mobileOnly{
         display: none;
     }
-}
 
-@media screen and (max-width: 600px) {
+    .mobile-overlay{
+        width: 100%;
+        height: 98%;
+        background-color: #1d1d1d;
+        z-index: 8;
+        opacity: 1;
+        position: absolute;
+    }
+    
     
     body {
         letter-spacing: normal;
     }
 
+    /* ?Header Mobile Stylings */
+
+    .custom-logo-link{
+        width: 65%;
+    }
+
+    .custom-logo{
+        width: 40% !important;
+        padding-top: 5px; 
+    }
+
+    .nav{
+        font-size: 35px !important;
+    }
+
+    .nav >li {
+        margin-top: 50px;
+    }
+
+    .nav_text{
+        font-size: 4.5vw;
+        text-align: right;
+    }
+    
+    .home-content{
+        letter-spacing: 0px;
+    }
+
+    /* ?FrontPage Mobile Stylings */
+
     .designedby_text{
-        font-size: 40px;
-        
+        font-size: 13vw;
+        margin-left: 0px !important; 
+    }
+
+    .name-row{
+        order: 2;
     }
 
     .firstname_text{
-        font-size: 130px;
-        letter-spacing: -10px;
+        font-size: 26vw;
+        margin-left: 0px !important; 
     }
 
     .lastname_text{
-        font-size: 82px;
-        letter-spacing: -10px;
-        text-align: center;
+        font-size: 20vw;
+        margin-left: 0px !important; 
+        letter-spacing: normal;
     }
 
     .title_description_text{
-        font-size:20px;
-        text-align: center;
-    }
-
-    .ms-5{
+        font-size:5vw;
+        line-height: 1;
         margin-left: 0px !important; 
-        
     }
 
-    .mt-4{
-        margin-top: 0px!important;
-    }
-
-    .skills_tag_text{
-        color: #828282;
-        font-size: 10px;
-        font-family: 'Dancing Script', cursive;
-        letter-spacing: normal;
-        line-height: 0.8;
-        margin-left: 50px !important;
-    }
-    
-    .skills_tag_text_special_closing{
-        color: #828282;
-        font-size: 10px;
-        font-family: 'Dancing Script', cursive;
-        letter-spacing: normal;
-        line-height: 0.8;
-        margin-left: 330px !important;
-    }
-   
-    .skills_text{
-        font-size: 70px;
-        text-align: center;
-    }
-
-    .lastname_text{
-        letter-spacing: normal;
-    }
-    
     .tag_text {
-        font-size: 10px;
+        display: none;
     }
 
     .tag_text_special {
-        font-size: 10px;
-        margin-left: 220px!important;
+        display: none;
     }
 
     .tag_text_special_closing {
-        font-size: 10px;
-        margin-left: 50%;
+        display: none;
     }
 
+    /* ?Skills Mobile Stylings */
+
     .skillbox {
-        margin-left: 0px;
         padding: 3px;
-        margin-left: 50px;
+        margin: auto;
         border: 2px solid #868686;
         border-radius: 10px;
     }
 
     .chart_text {
-        margin-left: 0px;
-        text-align: center;
-        font-size: 35px;
-    }
-
-    .projects_text{
-        font-size: 80px;
         text-align: center !important;
-        
-    }
-
-    .project_title_description_text{
         font-size: 25px;
+    }
+
+    .wp-block-spacer.spacer-bottom{
+        height: 50px !important;
+    }
+
+    .skills-and-attributes-heading{
+        font-size: 17vw;
         text-align: center;
+        margin-left: 0px;
+
     }
 
-    .project_tag_text{
-        font-size: 10px;
-        letter-spacing: normal;
-        line-height: 0;
-        margin-left: 15px!important;
-    }
-    
-    .project_tag_text_special_closing{
-        font-size: 10px;
-        letter-spacing: normal;
-        line-height: 0.1;
-        margin-left: 330px!important;
+    .skills-and-attributes-image{
+        margin: auto;
+        width: 80%;
+        display: none;
     }
 
-    .aboutme_text{
-        font-size: 60px;
-        line-height: 0.8;
-    }
-    
-    .aboutme_description_text {
-        font-size: 10px;
-        line-height: 0.8;
-    }
-    
+    /* ?Projects Mobile Stylings */
 
-    .contact_text{
-        text-align: center;
-        font-size: 60px;
-        line-height: 0.8;
+    .wp-block-spacer.spacer-mobile{
+        height: 30px !important;
     }
-    
-    .contact_description{
-        font-size: 10px;
-        font-family: 'Dancing Script', cursive;
-        letter-spacing: normal;
+
+    .my-work-heading{
+        font-size: 18vw;
+        text-align: center !important;
+        margin-left: 0px;
         
     }
 
-    .form_text{
-        font-size: 15px;
+    .my-work-subheading{
+        font-size: 7vw;
+        text-align: center;
+        margin-left: 0px;
     }
 
-    .my_btn{
-        font-size: 35px;
+    /* ?About Me Mobile Stylings  */
+
+    .about-me-heading{
+        font-size: 15vw;
+        text-align: center !important;
+        margin-left: 0px;
+    }
+    
+    .about-me-sub-heading {
+        font-size: 5vw;
+        text-align: center !important;
+        margin-left: 0px;
+        padding-top: 0px;
+        line-height: 1.2;
+    }
+    
+
+    .about-me-music-heading{
+        font-size: 7vw;
+        text-align: center;
+        
     }
 
-    .noMobile{
-        display: none;
+    iframe{
+        margin-top: 5px;
+        margin-bottom: 80px;
+    }
+
+    /* ?Contact Mobile Stylings */
+
+    .contact-heading{
+        padding-left: 0px;
+        text-align: center;
+        font-size: 14vw;
+    }
+
+    .wpforms-field-container{
+        margin-left: 0px !important;
+    }
+
+    .wpforms-submit-container{
+        margin-left: 0px !important;
+        text-align: center;
+        padding-top: 30px !important;
+    }
+
+    .wpforms-submit-container > input > input > input > input > button{
+        margin: auto !important;
+    }
+
+    .wpforms-field-label{
+        color: #FFF;
+        font-size: 5vw !important;
+      
+    }
+    
+    .wpforms-field-sublabel{
+        color: #FFF;
+        font-size: 3vw !important;
+    }
+    
+    
+    .wpforms-submit{
+        font-size: 4vw !important;
+        width: 30% !important;
+        margin: auto !important;
+        padding: 4px 15px !important;
+      
+    }
+
+    .form-field-mobile{
+        width: 90% !important;
+        margin: auto !important;
+    }
+    
+    /* ?Conformation Page Mobile Stylings */
+
+    .conformation-heading{
+        font-size: 12vw;
+    }
+
+    
+    .conformation-bth-button {
+        color: #FFF;
+        font-size: 4vw;
+        transition: .8s !important;
+        padding-top: 2px !important;
+        margin-top: 20px !important;
+      }
+    
+    .conformation-bth-button :hover{
+      transition: .8s;
+      background-color: #0ECF50 !important;
     }
 
 }
 
 /* ! Tablet Styling */
 
-@media screen and (max-width: 770px) {
+@media screen and (min-width:760px) and (max-width: 1023px) {
 
     body {
         letter-spacing: normal;
@@ -425,4 +743,15 @@ a {
         font-size: 10px;
     }
 
+}
+
+/* Media Queries for Nest Hub */
+@media screen and (min-width:1024px) and (max-width:1153px){
+
+}
+
+/* Media Queries for Nest Hub MAX*/
+
+@media screen and (min-width: 1154px) and (max-width: 1340px){
+    
 }

@@ -140,12 +140,15 @@ add_action( 'widgets_init', 'kurt_simmons_io_widgets_init' );
  * Enqueue scripts and styles.
  */
 function kurt_simmons_io_scripts() {
+	wp_enqueue_style( 'bootstrap stylesheet' , get_theme_file_uri('/css/bootstrap.min.css'));
+	wp_enqueue_style( 'main stylesheet' , get_theme_file_uri('/style.css'));
 	wp_enqueue_style( 'kurt-simmons-io-style', get_stylesheet_uri(), array(), _S_VERSION );
-	wp_enqueue_style( 'bootstrap-stylesheet' , get_template_directory_uri() . '/css/bootstrap.min.css');
-	wp_enqueue_style( 'main-stylesheet' , get_template_directory_uri() . '/style.css');
 	wp_style_add_data( 'kurt-simmons-io-style', 'rtl', 'replace' );
-	wp_enqueue_script( 'bootstrap-javascript' , get_template_directory_uri() . '/js/bootstrap.min.js');
+	wp_enqueue_script('bootstrap javascript' , get_theme_file_uri() . '/js/bootstrap.min.js', array(), '1.0', true);
+	wp_enqueue_script('my-javascript' , get_theme_file_uri() . '/js/index.js', array(), '1.0', true);
 	wp_enqueue_script( 'kurt-simmons-io-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
+	wp_enqueue_script('confetti javascript' , get_theme_file_uri() . '/js/confetti.js', array(), '1.0', true);
+
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
@@ -178,5 +181,41 @@ require get_template_directory() . '/inc/customizer.php';
  */
 if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
+}
+
+/**
+ * Register Custom Navigation Walker
+ */
+function register_navwalker(){
+	require_once get_template_directory() . '/class-wp-bootstrap-navwalker.php';
+}
+add_action( 'after_setup_theme', 'register_navwalker' );
+
+add_filter( 'nav_menu_link_attributes', 'prefix_bs5_dropdown_data_attribute', 20, 3 );
+/**
+ * Use namespaced data attribute for Bootstrap's dropdown toggles.
+ *
+ * @param array    $atts HTML attributes applied to the item's `<a>` element.
+ * @param WP_Post  $item The current menu item.
+ * @param stdClass $args An object of wp_nav_menu() arguments.
+ * @return array
+ */
+function prefix_bs5_dropdown_data_attribute( $atts, $item, $args ) {
+    if ( is_a( $args->walker, 'WP_Bootstrap_Navwalker' ) ) {
+        if ( array_key_exists( 'data-toggle', $atts ) ) {
+            unset( $atts['data-toggle'] );
+            $atts['data-bs-toggle'] = 'dropdown';
+        }
+    }
+    return $atts;
+}
+
+add_filter('nav_menu_css_class' , 'special_nav_class' , 10 , 2);
+
+function special_nav_class ($classes, $item) {
+    if (in_array('current-page-ancestor', $classes) || in_array('current-menu-item', $classes) ){
+        $classes[] = 'active ';
+    }
+    return $classes;
 }
 
