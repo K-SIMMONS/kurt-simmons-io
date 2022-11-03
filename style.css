@@ -714,7 +714,7 @@ a {
 
 }
 
-/* ! Tablet Styling */
+/* & Tablet Stylings */
 
 @media screen and (min-width:760px) and (max-width: 1023px) {
 
@@ -723,35 +723,627 @@ a {
         margin-left: 0px;
     }
 
-    .firstname_text{
+    .noTablet{
+        display: none;
+    }
+
+    /* &Header Tablet Stylings */
+
+    .custom-logo-link{
+        width: 15%;
+    }
+
+    .custom-logo{
+        width: 80% !important;
+        padding-top: 0px; 
+        padding-left: 10px;
+    }
+
+    .nav > li{
+        padding-left: 14px;
+        padding-right: 14px;
+        font-size: 18px;
+    }
+
+    .navbar-expand-sm .navbar-toggler{
+       display: none !important;
+    }
+
+    /* & FrontPage Tablet Stylings  */
+
+    .nav_text{
         letter-spacing: normal;
+    }
+
+    .designedby_text{
+        font-size: 8vw;
+        margin-left: 0px !important; 
+    }
+
+    .name-row{
+        order: 0;
+    }
+
+    .name-row > ul {
+        padding-left: 0px;
+    }
+
+    .tag_text.opening-ul-tag{
+        margin-left: 20px !important;
+       
+    }
+
+    .closing-ul-tag{
+        margin-right: 0px !important;
+    }
+
+    .firstname_text{
+        font-size: 17vw;
+        margin-left: 0px !important; 
     }
 
     .lastname_text{
-        letter-spacing: normal;
+        font-size: 14vw;
+        margin-left: 0px !important; 
+        letter-spacing: -3px;
+    }
+
+    .title_description_text{
+        font-size:4vw;
+        line-height: 1;
+        letter-spacing: -2px;
+        margin-left: 0px !important; 
     }
     
     .tag_text {
-        font-size: 10px;
+        font-size: 20px;
+        padding-left: 0px !important;
+        margin-left: 0px !important;
     }
 
     .tag_text_special {
-        font-size: 10px;
+        font-size: 20px;
+        margin-left: 60%;
     }
 
     .tag_text_special_closing {
-        font-size: 10px;
+        font-size: 20px;
     }
 
+    /* &Skills Page */
+
+    .skillbox {
+        padding: 3px;
+        margin: auto;
+        border: 2px solid #868686;
+        border-radius: 10px;
+    }
+
+    .chart_text {
+        text-align: center !important;
+        font-size: 25px;
+    }
+
+    .wp-block-spacer.spacer-bottom{
+        height: 50px !important;
+    }
+
+    .skills-and-attributes-heading{
+        font-size: 9vw;
+        /* text-align: center; */
+        margin-left: 50px;
+        line-height: .98;
+
+    }
+
+    .skills-and-attributes-image{
+        margin: auto;
+        width: 70%;
+        margin-bottom: 20px !important;
+        /* display: none; */
+    }
+
+   /* &Projects Tablet Stylings */
+
+     .project-container{
+      text-align: center !important;
+     }
+
+     .project-container.gb-layout-columns-2>.gb-layout-column-wrap {
+       grid-template-columns: 12fr 0fr;
+     }
+
+     .project-container.gb-block-layout-column-gap-4{
+        grid-gap: 0 0em;
+     }
+
+     .wp-block-spacer.spacer-mobile{
+       height: 30px !important;
+     }
+    
+     .my-work-heading{
+        font-size: 13vw;
+        text-align: center !important;
+        margin-left: 0px; 
+        margin: auto !important;   
+      }
+    
+      .my-work-subheading{
+        font-size: 4vw;
+        text-align: center;
+        margin-left: 0px;
+        margin: auto !important;   
+      }
+
+    /* &About Me Mobile Stylings  */
+
+    .about-me-heading{
+        font-size: 8.5vw;
+        text-align: center !important;
+        margin-left: 0px;
+    }
+    
+    .about-me-sub-heading {
+        font-size: 2.5vw;
+        text-align: center !important;
+        margin-left: 0px;
+        padding-top: 0px;
+        line-height: 1.2;
+    }
+    
+
+    .about-me-music-heading{
+        font-size: 4vw;
+        text-align: center;
+        
+    }
+
+    iframe{
+        margin-top: 5px;
+        margin-bottom: 80px;
+    }
+
+        /* &Contact Tablet Stylings */
+
+        .contact-heading{
+            padding-left: 10px;
+            text-align: center;
+            font-size: 11vw;
+        }
+    
+        .wpforms-field-container{
+            margin-left: 0px !important;
+            margin: auto !important;
+        }
+    
+        .wpforms-submit-container{
+            margin-left: 0px !important;
+            text-align: center;
+            padding-top: 30px !important;
+            margin: auto !important;
+        }
+    
+        .wpforms-submit-container > input > input > input > input > button{
+            margin: auto !important;
+        }
+    
+        .wpforms-field-label{
+            color: #FFF;
+            font-size: 2.5vw !important;
+          
+        }
+        
+        .wpforms-field-sublabel{
+            color: #FFF;
+            font-size: 2.5vw !important;
+        }
+        
+        
+        .wpforms-submit{
+            font-size: 3vw !important;
+            width: 20% !important;
+            margin: auto !important;
+            padding: 4px 15px !important;
+          
+        }
+    
+        .form-field-mobile{
+            width: 90% !important;
+            margin: auto !important;
+        }
+
+        .contact-form-container.gb-layout-columns-2>.gb-layout-column-wrap{
+            grid-template-columns: 12fr 0fr;
+        }
+
+    /* &Conformation Page Tablet Stylings */
+
+    .conformation-heading{
+        font-size: 10vw;
+    }
+
+    
+    .conformation-bth-button {
+        color: #FFF;
+        font-size: 3vw;
+        transition: .8s !important;
+        padding-top: 1px !important;
+        margin-top: 20px !important;
+      }
+    
+    .conformation-bth-button :hover{
+      transition: .8s;
+      background-color: #0ECF50 !important;
+    }
+    
+
 }
 
-/* Media Queries for Nest Hub */
+/* ^Media Queries for Nest Hub */
 @media screen and (min-width:1024px) and (max-width:1153px){
 
+    /* ^Front Page */
+    .nav_text{
+        letter-spacing: normal;
+    }
+
+    .designedby_text{
+        font-size: 6vw;
+        margin-left: 0px !important; 
+        letter-spacing: -1 !important;
+    }
+
+    .name-row{
+        order: 0;
+    }
+
+    .name-row > ul {
+        padding-left: 0px;
+    }
+
+    .tag_text.opening-ul-tag{
+        margin-left: 20px !important;
+       
+    }
+
+    .closing-ul-tag{
+        margin-right: 0px !important;
+    }
+
+    .firstname_text{
+        font-size: 15vw;
+        margin-left: 0px !important; 
+    }
+
+    .lastname_text{
+        font-size: 11vw;
+        margin-left: 0px !important; 
+        letter-spacing: -3px;
+    }
+
+    .title_description_text{
+        font-size:3vw;
+        line-height: 1;
+        letter-spacing: -2px;
+        margin-left: 0px !important; 
+    }
+    
+    .tag_text {
+        font-size: 20px;
+        padding-left: 0px !important;
+        margin-left: 0px !important;
+    }
+
+    .tag_text_special {
+        font-size: 20px;
+        margin-left: 60%;
+    }
+
+    .tag_text_special_closing {
+        font-size: 20px;
+    }
+
+    /*  ^Skills Page */
+
+    .skillbox {
+        padding: 3px;
+        margin: auto;
+        border: 2px solid #868686;
+        border-radius: 10px;
+    }
+
+    .chart_text {
+        text-align: center !important;
+        font-size: 25px;
+    }
+
+    .wp-block-spacer.spacer-bottom{
+        height: 50px !important;
+    }
+
+    .skills-and-attributes-heading{
+        font-size: 9vw;
+        /* text-align: center; */
+        margin-left: 50px;
+        line-height: .98;
+
+    }
+
+    .skills-and-attributes-image{
+        margin: auto;
+        width: 70%;
+        margin-bottom: 20px !important;
+        /* display: none; */
+    }
+
+   /* ^Projects Page */
+
+   .project-container{
+    text-align: center !important;
+   }
+
+   .project-container.gb-layout-columns-2>.gb-layout-column-wrap {
+     grid-template-columns: 12fr 0fr;
+   }
+
+   .project-container.gb-block-layout-column-gap-4{
+      grid-gap: 0 0em;
+   }
+
+   .wp-block-spacer.spacer-mobile{
+     height: 30px !important;
+   }
+  
+   .my-work-heading{
+      font-size: 13vw;
+      text-align: center !important;
+      margin-left: 0px; 
+      margin: auto !important;   
+    }
+  
+    .my-work-subheading{
+      font-size: 4vw;
+      text-align: center;
+      margin-left: 0px;
+      margin: auto !important;   
+    }
+
+    /* ^Contact Page */
+
+    .contact-heading{
+        padding-left: 10px;
+        text-align: center;
+        font-size: 10vw;
+    }
+
+    .wpforms-field-container{
+        margin-left: 0px !important;
+        margin: auto !important;
+    }
+
+    .wpforms-submit-container{
+        margin-left: 0px !important;
+        text-align: center;
+        padding-top: 30px !important;
+        margin: auto !important;
+    }
+
+    .wpforms-submit-container > input > input > input > input > button{
+        margin: auto !important;
+    }
+
+    .wpforms-field-label{
+        color: #FFF;
+        font-size: 2vw !important;
+      
+    }
+    
+    .wpforms-field-sublabel{
+        color: #FFF;
+        font-size: 2.5vw !important;
+    }
+    
+    
+    .wpforms-submit{
+        font-size: 3vw !important;
+        width: 20% !important;
+        margin: auto !important;
+        padding: 4px 15px !important;
+      
+    }
+
+    .form-field-mobile{
+        width: 90% !important;
+        margin: auto !important;
+    }
+
+    .contact-form-container.gb-layout-columns-2>.gb-layout-column-wrap{
+        grid-template-columns: 12fr 0fr;
+    }  
+
 }
 
-/* Media Queries for Nest Hub MAX*/
+/* ~Media Queries for Nest Hub MAX*/
 
 @media screen and (min-width: 1154px) and (max-width: 1340px){
+    
+     /* ~Front Page */
+     .nav_text{
+        letter-spacing: normal;
+    }
+
+    .designedby_text{
+        font-size: 6vw;
+        margin-left: 0px !important; 
+        letter-spacing: -1 !important;
+    }
+
+    .name-row{
+        order: 0;
+    }
+
+    .name-row > ul {
+        padding-left: 0px;
+    }
+
+    .tag_text.opening-ul-tag{
+        margin-left: 20px !important;
+       
+    }
+
+    .closing-ul-tag{
+        margin-right: 0px !important;
+    }
+
+    .firstname_text{
+        font-size: 15vw;
+        margin-left: 0px !important; 
+    }
+
+    .lastname_text{
+        font-size: 11vw;
+        margin-left: 0px !important; 
+        letter-spacing: -3px;
+    }
+
+    .title_description_text{
+        font-size:3vw;
+        line-height: 1;
+        letter-spacing: -2px;
+        margin-left: 0px !important; 
+    }
+    
+    .tag_text {
+        font-size: 20px;
+        padding-left: 0px !important;
+        margin-left: 0px !important;
+    }
+
+    .tag_text_special {
+        font-size: 20px;
+        margin-left: 60%;
+    }
+
+    .tag_text_special_closing {
+        font-size: 20px;
+    }
+
+    /*  ~Skills Page */
+
+    .skillbox {
+        padding: 3px;
+        margin: auto;
+        border: 2px solid #868686;
+        border-radius: 10px;
+    }
+
+    .chart_text {
+        text-align: center !important;
+        font-size: 25px;
+    }
+
+    .wp-block-spacer.spacer-bottom{
+        height: 50px !important;
+    }
+
+    .skills-and-attributes-heading{
+        font-size: 9vw;
+        /* text-align: center; */
+        margin-left: 50px;
+        line-height: .98;
+
+    }
+
+    .skills-and-attributes-image{
+        margin: auto;
+        width: 70%;
+        margin-bottom: 20px !important;
+        /* display: none; */
+    }
+
+   /* ~Projects Page */
+
+   .project-container{
+    text-align: center !important;
+   }
+
+   .project-container.gb-layout-columns-2>.gb-layout-column-wrap {
+     grid-template-columns: 12fr 0fr;
+   }
+
+   .project-container.gb-block-layout-column-gap-4{
+      grid-gap: 0 0em;
+   }
+
+   .wp-block-spacer.spacer-mobile{
+     height: 30px !important;
+   }
+  
+   .my-work-heading{
+      font-size: 11vw;
+      text-align: center !important;
+      margin-left: 0px; 
+      margin: auto !important;   
+    }
+  
+    .my-work-subheading{
+      font-size: 3.5vw;
+      text-align: center;
+      margin-left: 0px;
+      margin: auto !important;   
+    }
+
+    /* ~Contact Page */
+
+    .contact-heading{
+        padding-left: 10px;
+        text-align: center;
+        font-size: 10vw;
+    }
+
+    .wpforms-field-container{
+        margin-left: 0px !important;
+        margin: auto !important;
+    }
+
+    .wpforms-submit-container{
+        margin-left: 0px !important;
+        text-align: center;
+        padding-top: 30px !important;
+        margin: auto !important;
+    }
+
+    .wpforms-submit-container > input > input > input > input > button{
+        margin: auto !important;
+    }
+
+    .wpforms-field-label{
+        color: #FFF;
+        font-size: 2vw !important;
+      
+    }
+    
+    .wpforms-field-sublabel{
+        color: #FFF;
+        font-size: 2.5vw !important;
+    }
+    
+    
+    .wpforms-submit{
+        font-size: 2.5vw !important;
+        width: 15% !important;
+        margin: auto !important;
+        padding: 4px 15px !important;
+      
+    }
+
+    .form-field-mobile{
+        width: 90% !important;
+        margin: auto !important;
+    }
+
+    .contact-form-container.gb-layout-columns-2>.gb-layout-column-wrap{
+        grid-template-columns: 12fr 0fr;
+    }  
     
 }
