@@ -40,7 +40,7 @@ if (basename($template)=='front-page.php'): ?>
 <?php else: ?>
 
 <header class = "header">
-  <nav class="navbar navbar-expand-md navbar-dark bg-none" id = "navBar"role="navigation">
+  <nav class="navbar navbar-expand-sm navbar-dark bg-none" id = "navBar"role="navigation">
     <div class="container-fluid">
      
       <!-- Brand and toggle get grouped for better mobile display -->
