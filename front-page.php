@@ -4,7 +4,7 @@
 <div class="home-content">
     <div class="container-fluid ">
       <div class="row">
-        <div class="col-sm-12 col-md-6 col-lg-6 name-row">
+        <div class="col-sm-12 col-md-8 col-lg-6 name-row">
           <ul>
             <p class="tag_text">&lt;html&gt;</p>
             <p class="tag_text ms-5">&lt;body&gt;</p>
@@ -23,12 +23,12 @@
         </div>
         <div class="col-sm-12 col-md-4 col-lg-4 ms-auto nav-row">
           <ul class="mt-3">
-            <p class="tag_text"> &lt;ul&gt; </p>
+            <p class="tag_text opening-ul-tag"> &lt;ul&gt; </p>
             <a href="/my-skills"> <h2 class="nav_text ms-5"> &lt;mySkills&gt; </h2> </a>
             <a href="/my-work"> <h2 class="nav_text ms-5"> &lt;myWork&gt; </h2> </a>
             <a href="/about"> <h2 class="nav_text ms-5"> &lt;aboutMe&gt; </h2> </a>
             <a href="/contact"> <h2 class="nav_text ms-5"> &lt;contactMe&gt; </h2> </a>
-            <p class="tag_text text-end me-5"> &lt;/ul&gt; </p>
+            <p class="tag_text text-end me-5 closing-ul-tag"> &lt;/ul&gt; </p>
           </ul>
         </div>
       </div>
